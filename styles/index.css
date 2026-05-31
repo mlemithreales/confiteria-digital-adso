@@ -117,22 +117,32 @@ header {
     display: flex;
     gap: 20px;
     padding: 30px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1400px;
+    margin: 30px auto;
+    align-items: stretch;
 
 }
 
 .filtrado {
-    width: 160px;
-    min-width: 140px;
-    border: 1.5px solid #d9d9d9;
-    border-radius: 0px;
+    width: 224px;
+    min-width: 224px;
+    border: 1.5px solid #3F3F3F;
     padding: 18px 14px;
-    height: fit-content;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+    
 
 }
 
-.fildrado h3 {
+.separador {
+    border: none;
+    border-top: 1px solid #3F3F3F;
+    margin: 12px -14px;
+}
+
+.filtrado h3 {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 14px;
@@ -142,7 +152,7 @@ header {
 }
 
 .filtro-grupo {
-    margin-bottom: 16px;
+    flex:1;
 }
 
 .filtro-grupo h4 {
@@ -200,31 +210,36 @@ hr {
 }
 
 .productos {
+    flex:1;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 300px);
     gap: 20px;
-    padding: 40px;
+    padding: 0px;
 }
 
 .card {
+    width: 300px;
+    height: 380px;
+
     border: 2px solid #65A83C;
-    padding: 15px;
-    text-align: center;
     border-radius: 10px;
     background: #fff;
+    padding: 15px;
     box-sizing: border-box;
-    width: 332px;
-    height: 400px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .card .items {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    flex: 1;
+    width: 100%;
 }
 
-.items h3,
+.items h3
 .items p{
     margin: 0;
 }
@@ -244,14 +259,17 @@ hr {
 .top {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
 }
 
 .card .card-img {
-    width: 100%;
-    height: 150px;
+    width: 130px;
+    height: 180px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin: 0 auto 15px auto;
+
 }
 
 .card-footer {
@@ -268,9 +286,9 @@ hr {
 }
 
 .card-title {
-    font-size: 20px;
+    font-size: 14px;
     color: #333;
-    font-weight: normal;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -282,16 +300,16 @@ hr {
 }
 
 .top h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: #3F3F3F;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
 }
 
 .top p {
     font-size: 20px;
     color: #3F3F3F;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -301,12 +319,21 @@ hr {
     border: none;
     width: 100%;
     height: 48px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
     border-radius: 8px;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background 0.2s ease;
+    gap:10px;
+}
+
+.icono{
+    width: 34px !important;
+    height: 34px !important;
+
 }
 
 .card .agregar-carrito:hover {
@@ -314,5 +341,6 @@ hr {
 }
 
 .card .agregar-carrito i {
-    font-size: 20px;
+     font-size: 18px;
+    font-weight: 600;
 }
