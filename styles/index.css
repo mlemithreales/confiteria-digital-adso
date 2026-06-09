@@ -9,30 +9,24 @@ header {
     background-color: #6C8E2C;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
     align-items: center;            /* Centra todo verticalmente para que no se mueva de arriba a abajo */
-    padding: 20px 30px;             /* El primer número es arriba/abajo. El segundo (60px) controla tus bordes laterales */
+    padding: 20px 30px;             /* El primer número es arriba/abajo. El segundo controla tus bordes laterales */
     width: 100%;
-    box-sizing: border-box;
+    
 
 }
 
 .header-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    
+    gap: 20px;
 }
 
 .header-container2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    gap: 23px;
-    
+    gap: 20px;
+    margin-left: auto;
 }
 
 .header-container2 div a {
@@ -40,15 +34,18 @@ header {
 }
 
 .logo {
+    
     width: 120px;
-    height: 80px;
+    height: 60px;
+    margin: 15px;
+    margin-left: 0px;
+   
 }
 
 .logo img {
     width: 100%;
     height: 100%;
     padding: 0;
-    margin: 0;
     gap: 0px;
 }
 
