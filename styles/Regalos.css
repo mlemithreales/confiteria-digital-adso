@@ -272,21 +272,19 @@ body {
     font-weight: 600;
 }
 /* Izquierda */
-.producto:nth-child(1){
-    margin-top: 60px;
-    margin-right: -40px;
+.producto{
+    position: relative;
+}
+
+.producto:nth-child(1),
+.producto:nth-child(3){
+    margin-top: 50px; /* bajan las laterales */
     z-index: 1;
 }
 
-/* Centro */
 .producto:nth-child(2){
-    height: 380px;
     z-index: 3;
-}
-.producto:nth-child(3){
-    margin-top: 60px;
-    margin-left: -40px;
-    z-index: 1;
+    transform: translateY(-30px); /* sube la del centro */
 }
 .pro-img{
     width: 100%;
@@ -296,7 +294,6 @@ body {
     width: 100%;
     height: 240px;
 }
-
 .canasta-banner img{
     width: 93%;
     height: 100%;
@@ -403,6 +400,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
+
 }
 
 .card .card-img {
@@ -410,7 +408,118 @@ body {
     height: 180px;
     object-fit: contain;
     margin: 0 auto 15px auto;
+
 }
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-title {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.top h3 {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3F3F3F;
+    font-weight: 700;
+    margin: 0;
+}
+
+.top p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #3F3F3F;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card .agregar-carrito {
+    background: #6C8E2C;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icono, .icono-carrito{
+    width: 34px;
+    height: 34px;
+
+}
+/*ANIMAGION DE BOTON AGREGAR AL CARRITO*/
+.agregar-carrito {
+    background: #8AAE2D;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.agregar-carrito:hover {
+    background: #70A31F;
+}
+
+/* Oculta el texto original al pasar el mouse */
+.agregar-carrito:hover .texto-btn {
+    font-size: 0;
+}
+
+/* Muestra el nuevo texto */
+.agregar-carrito:hover .texto-btn::after {
+    content: "Agregado";
+    font-size: 20px;
+    font-weight: 600;
+    object-fit: contain;
+}
+
+/* Cambia el icono */
+.agregar-carrito:hover .icono-carrito {
+    content: url("/assets/imagenes-index/Buy.png");
+    width: 34px;
+    height: 34px;
+    padding-left: 0%;
+
+}
+
+.card .agregar-carrito i {
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 /*slider 3 sonas */
 .slider2{
@@ -453,9 +562,6 @@ footer {
     width: 200px;
     height: 100px;
     margin: 15px;
-    
-    
-    
 }
 
 .logo-footer img {
