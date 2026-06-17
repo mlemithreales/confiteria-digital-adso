@@ -5,23 +5,22 @@
 }
 
 body {
-    background-color: #ffff;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', 'monserrat', sans-serif;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
+    
+    background-color: #ffff; /* Establece el color de fondo de la página en blanco */
+    margin: 0; /* Elimina el margen externo predeterminado del navegador */
+    padding: 0; /* Elimina el espacio interno predeterminado */
+    font-family: 'Montserrat', sans-serif; /* Define la fuente principal del sitio */
+    box-sizing: border-box; /* Incluye padding y borde dentro del tamaño total del elemento */
+    overflow-x: hidden; /* Oculta el contenido que sobresalga horizontalmente y evita el scroll lateral */
 
+}
 
 header {
     background-color: #6C8E2C;
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* Centra todo verticalmente para que no se mueva de arriba a abajo */
     padding: 20px 30px;
-    /* El primer número es arriba/abajo. El segundo controla tus bordes laterales */
     width: 100%;
     box-sizing: border-box;
     margin: 0;
@@ -33,7 +32,12 @@ header {
     display: flex;
     align-items: center;
     height: 70px;
+    
 
+}
+
+.menu_hamburgesa{
+    display: none;
 }
 
 .header-container2 {
@@ -96,8 +100,9 @@ header {
 }
 
 .botones a img {
-    width: 66px;
-    height: 66px;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
 }
 
 .banner img {
@@ -147,6 +152,7 @@ header {
     padding: 40px 20px;
     max-width: 1400px;
     margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .filtrado {
@@ -170,9 +176,11 @@ header {
 }
 
 .filtrado h3 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: 800;
     color: #524E4E;
+    margin: 4PX;
+    font-family: 'Montserrat', sans-serif;
 
 
 }
@@ -181,7 +189,7 @@ header {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 2px;
-    margin-top: 0px;
+    margin-top: 2px;
     color: #524E4E;
 }
 
@@ -191,6 +199,7 @@ header {
     margin-bottom: 6px;
     gap: 8px;
     margin-top: 14px;
+    font-weight: 540;
 }
 
 .filtro-items input[type="checkbox"] {
@@ -250,13 +259,14 @@ hr {
 .card {
     width: 100%;
     height: 380px;
-    border: 2px solid #65A83C;
+    border: 4px solid #65A83C;
     border-radius: 10px;
     background: #fff;
     padding: 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card .items {
@@ -357,14 +367,48 @@ hr {
     gap: 10px;
 }
 
-.icono {
+.icono, .icono-carrito{
     width: 34px;
     height: 34px;
 
 }
 /*ANIMAGION DE BOTON AGREGAR AL CARRITO*/
-.card .agregar-carrito:hover {
+.agregar-carrito {
+    background: #8AAE2D;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agregar-carrito:hover {
     background: #70A31F;
+}
+
+/* Oculta el texto original al pasar el mouse */
+.agregar-carrito:hover .texto-btn {
+    font-size: 0;
+}
+
+/* Muestra el nuevo texto */
+.agregar-carrito:hover .texto-btn::after {
+    content: "Agregado";
+    font-size: 24px;
+    font-weight: 600;
+    object-fit: contain;
+}
+
+/* Cambia el icono */
+.agregar-carrito:hover .icono-carrito {
+    content: url("/assets/imagenes-index/Buy.png");
+    width: 34px;
+    height: 34px;
+   
+
 }
 
 .card .agregar-carrito i {
@@ -390,7 +434,7 @@ hr {
 .card-videos {
     width: 218px;
     height: 262px;
-    border: 2px solid #65A83C;
+    border: 3px solid #65A83C;
     border-radius: 32px;
     background: #fff;
     box-sizing: border-box;
@@ -399,6 +443,7 @@ hr {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .card-videos .items {
@@ -416,8 +461,17 @@ h3 {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 600;
+  
+    
 
 }
+
+.pl{
+    padding-left: 40px;
+}
+
 
 .card-img-videos {
     width: 100%;
@@ -428,9 +482,7 @@ h3 {
 
 }
 
-
-
-
+/* pie de pagina*/
 footer {
     background-color: #272925;
     width: 100%;
@@ -450,26 +502,34 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 250px;
+    max-width: 450px;
 }
 
 .logo-footer {
     margin-bottom: 10px;
+    width: 200px;
+    height: 100px;
+    margin: 15px;
+    
+    
+    
 }
 
 .logo-footer img {
     width: 100%;
-    height: 100px;
-
+    height: 100%;
+    object-fit: cover;
 }
 
 .frase_footer {
-    font-size: 16px;
+    font-size: 24px;
+    font-weight: 400;
     color: #fff;
     margin: 0;
     line-height: 1.5;
     margin-bottom: 20px;
-    max-width: 220px;
+    max-width: 500px;
+    width: 100%;
 }
 
 .iconos {
@@ -485,32 +545,32 @@ footer {
 }
 
 .icono_1 {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
 .icono_2 {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
 .icono_3 {
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
     object-fit: contain;
 }
 
 .icono_4 {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
 .icono_5 {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
@@ -520,14 +580,15 @@ footer {
     flex-direction: column;
     gap: 16px;
     padding-top: 12px;
+   
 }
 
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
 
 
 }
@@ -538,22 +599,22 @@ footer {
     flex-direction: column;
     gap: 24px;
     padding-top: 10px;
-    max-width: 220px;
+    max-width: 270px;
 }
 
 .contacto-item {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 10px;
     color: #fff;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 16px;
 }
 
 .contacto-item img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 
 }
 
@@ -566,7 +627,7 @@ footer {
     border-top: 1px solid #444;
     color: #aaa;
     font-size: 13px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*slider inicio */
@@ -760,7 +821,7 @@ footer {
         align-items: center;
     }
 
-      .nav-iconos {
+    .nav-iconos {
         display: flex;
         gap: 20px;
         justify-content: center;
@@ -875,11 +936,12 @@ footer {
         justify-content: space-between;
         align-items: center;
         overflow: hidden;
+        margin: 20px 0px 20px 0px;
     }
 
     .card-img-videos {
-        width: 85% !important;
-        height: 100px !important;
+        width: 85% ;
+        height: 100px ;
         object-fit: contain;
         margin: 0 auto 8px auto;
     }

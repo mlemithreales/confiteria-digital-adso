@@ -1,0 +1,570 @@
+/*font-weight: 100; Thin 
+font-weight: 200;  Extra Light 
+font-weight: 300;  Light 
+font-weight: 400;  Regular 
+font-weight: 500;  Medium 
+font-weight: 600;  SemiBold 
+font-weight: 700;  Bold 
+font-weight: 800;  Extra Bold 
+font-weight: 900; Black */ 
+
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #ffff; /* Establece el color de fondo de la página en blanco */
+    margin: 0; /* Elimina el margen externo predeterminado del navegador */
+    padding: 0; /* Elimina el espacio interno predeterminado */
+    font-family: 'Montserrat', sans-serif; /* Define la fuente principal del sitio */
+    box-sizing: border-box; /* Incluye padding y borde dentro del tamaño total del elemento */
+    overflow-x: hidden; /* Oculta el contenido que sobresalga horizontalmente y evita el scroll lateral */
+}
+
+
+.header {
+    background-color: #6C8E2C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 30px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    gap: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.menu_hamburgesa{
+    display: none;
+}
+
+.header-container2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: auto;
+}
+
+.header-container2 div a {
+    text-decoration: none;
+}
+
+.logo {
+
+    width: 130px;
+    height: 80px;
+    margin: 15px;
+    margin-left: 0px;
+    gap: 20px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    gap: 0px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+.nav-links a:hover,
+.registro a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.nav-item a,
+.header-container2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.botones a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.botones a img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.paginas-principales {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: -30px;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-dulceria {
+    width: 550px;
+    height: 70px;
+    background-color: #6C8E2C;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    border: none;
+    border-radius: 14px 4px 4px 14px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-regalos {
+    width: 550px;
+    height: 70px;
+    background-color: #70A31F;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px 14px 14px 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+/* oculta menu movil o hamburgesa*/
+.label_hamburgesa, .menu-hamburgesa{
+    display: none;
+}
+.nav-item-movil {
+    display: none;
+}
+.nav-iconos {
+    display: none;
+}
+#menu-check {
+    display: none;
+}
+
+/*slider inicio */
+.slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 330%;
+    height: 100%;
+    animation: mover 8s infinite;
+}
+
+.slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes mover {
+
+    0%,
+    30% {
+        transform: translateX(0);
+    }
+
+    33%,
+    63% {
+        transform: translateX(-36.33%);
+    }
+
+    66%,
+    96% {
+        transform: translateX(-68.66%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.fondo-ranking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    background-color: #FFFFFF;
+    border: 1px solid #3F3F3F;
+    margin: 45px auto 0 auto;
+}
+
+.ranking{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 82px;
+    background-color: #6C8E2C;
+    justify-content: center; /* horizontal */
+    align-items: center; /*vertical*/
+
+}
+
+.text-ranking{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.productos-ranking{
+    flex: 1;
+    /* Ocupa todo el espacio disponible */
+    display: grid;
+    /* Activa CSS Grid */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas iguales */
+    padding: 20px;
+    /* Sin espacio interno */
+}
+
+.producto{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 290px;
+    border: 4px solid #70A31F;
+    border-radius: 7px;
+    background: #fff;
+    padding: 30px;
+    
+}
+
+.producto-2{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 290px;
+    border: 4px solid #70A31F;
+    border-radius: 7px;
+    background: #fff;
+    padding: 30px;
+
+}
+
+.text-tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    font-size: 26px;
+    font-weight: 600;
+}
+/* Izquierda */
+.producto:nth-child(1){
+    margin-top: 60px;
+    margin-right: -40px;
+    z-index: 1;
+}
+
+/* Centro */
+.producto:nth-child(2){
+    height: 380px;
+    z-index: 3;
+}
+.producto:nth-child(3){
+    margin-top: 60px;
+    margin-left: -40px;
+    z-index: 1;
+}
+.pro-img{
+    width: 100%;
+    height: 100%;
+}
+.pro-img-2{
+    width: 100%;
+    height: 240px;
+}
+
+.canasta-banner img{
+    width: 93%;
+    height: 100%;
+    margin: 45px 45px;
+    
+
+}
+
+.filtro{
+    display: flex;              /* los pone en fila */
+    gap: 10px;                  /* espacio entre botones */
+    flex-wrap: nowrap;         /* evita que bajen de línea */
+    overflow-x: auto;          /* si no caben, se puede deslizar */
+    padding: 10px;
+    margin: 0 45px;
+    gap: 18px;
+}
+
+.btn-filtrado{
+    border: 2px solid ;  /* borde  */
+    background-color: white;    /* fondo blanco */
+    color: #050505;             /* texto  */
+    padding: 8px 15px;
+    border-radius: 10px;        /* bordes redondeados tipo botón */
+    cursor: pointer;
+    font-size: 31.3px;
+    font-weight: 500;
+    width: 160px;
+    white-space: nowrap;        /* evita que el texto se parta */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-filtrado-todo{
+    border: 2px solid #6C8E2C;  /* borde verde */
+    background-color: #6C8E2C;    /* fondo  */
+    color: white;             /* texto verde */
+    padding: 8px 15px;
+    border-radius: 10px;        /* bordes redondeados tipo botón */
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 32px;
+    width: 155px;
+    white-space: nowrap;        /* evita que el texto se parta */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.btn-filtrado:hover{
+    background-color: #6C8E2C;  /* cambia al pasar el mouse */
+    color: white;
+}
+.vitrina {
+    flex: 1;
+    /* Ocupa todo el espacio disponible */
+    display: grid;
+    /* Activa CSS Grid */
+    grid-template-columns: repeat(4, 1fr);
+    /* 3 columnas iguales */
+    gap: 20px;
+    /* Espacio entre productos */
+    padding: 0px;
+    /* Sin espacio interno */
+    margin: 45px 45px;
+}
+.card {
+    width: 100%;
+    height: 380px;
+    border: 4px solid #65A83C;
+    border-radius: 10px;
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+}
+
+.items h3 .items p {
+    margin: 0;
+}
+
+.items .agregar-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items .agregar-carrito .icono {
+    filter: brightness(0) invert(1);
+    width: 32px;
+    height: 32px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.card .card-img {
+    width: 130px;
+    height: 180px;
+    object-fit: contain;
+    margin: 0 auto 15px auto;
+}
+
+/*slider 3 sonas */
+.slider2{
+    width: 100%;
+    height: 400px;
+    margin: 47px 0px;
+    padding: 20px 0px;
+}
+
+.slides img {
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+}
+/* pie de pagina*/
+footer {
+    background-color: #272925;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Columna 1 */
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+}
+
+.logo-footer {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 100px;
+    margin: 15px;
+    
+    
+    
+}
+
+.logo-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frase_footer {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.iconos img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icono_1 {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icono_2 {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icono_3 {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.icono_4 {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icono_5 {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Columna 2  del footer*/
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 12px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Columna 3 del footer*/
+.footer-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 10px;
+    max-width: 270px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 16px;
+}
+
+.contacto-item img {
+    width: 60px;
+    height: 60px;
+
+}
+
+/* Barra inferior */
+.footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 14px 60px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
