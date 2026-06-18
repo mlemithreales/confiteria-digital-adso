@@ -139,7 +139,7 @@ header {
     gap: 20px;
 }
 
-.pedipo-1{
+.pedido{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -194,15 +194,17 @@ header {
 
     padding: 15px 25px;
     border-radius: 15px;
+
+    height: 40px;
 }
 
 .pedido-estado img{
-    width: 35px;
-    height: 35px;
+    width: 58px;
+    height: 60px;
 }
 
 .estado{
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 500;
 }
 
@@ -213,4 +215,146 @@ header {
 .ver-mas img{
     width: 48px;
     cursor: pointer;
+}
+
+/* pie de pagina*/
+footer {
+    background-color: #272925;
+    width: 100%;
+    margin-top: 45px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 60px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Columna 1 */
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 450px;
+}
+
+.logo-footer {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 100px;
+    margin: 15px;
+}
+
+.logo-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frase_footer {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.iconos img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icono_1 {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icono_2 {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icono_3 {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.icono_4 {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.icono_5 {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Columna 2  del footer*/
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 12px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Columna 3 del footer*/
+.footer-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 10px;
+    max-width: 270px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 16px;
+}
+
+.contacto-item img {
+    width: 60px;
+    height: 60px;
+
+}
+
+/* Barra inferior */
+.footer-bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 14px 60px;
+    border-top: 1px solid #444;
+    color: #aaa;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
 }
