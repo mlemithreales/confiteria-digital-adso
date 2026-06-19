@@ -5,25 +5,36 @@
 }
 
 body {
-    
-    background-color: #ffff; /* Establece el color de fondo de la página en blanco */
-    margin: 0; /* Elimina el margen externo predeterminado del navegador */
-    padding: 0; /* Elimina el espacio interno predeterminado */
-    font-family: 'Montserrat', sans-serif; /* Define la fuente principal del sitio */
-    box-sizing: border-box; /* Incluye padding y borde dentro del tamaño total del elemento */
-    overflow-x: hidden; /* Oculta el contenido que sobresalga horizontalmente y evita el scroll lateral */
+
+    background-color: #ffff;
+    /* Establece el color de fondo de la página en blanco */
+    margin: 0;
+    /* Elimina el margen externo predeterminado del navegador */
+    padding: 0;
+    /* Elimina el espacio interno predeterminado */
+    font-family: 'Montserrat', sans-serif;
+    /* Define la fuente principal del sitio */
+    box-sizing: border-box;
+    /* Incluye padding y borde dentro del tamaño total del elemento */
+    overflow-x: hidden;
+    /* Oculta el contenido que sobresalga horizontalmente y evita el scroll lateral */
 
 }
+
 /* oculta menu movil o hamburgesa*/
-.label_hamburgesa, .menu-hamburgesa{
+.label_hamburgesa,
+.menu-hamburgesa {
     display: none;
 }
+
 .nav-item-movil {
     display: none;
 }
+
 .nav-iconos {
     display: none;
 }
+
 #menu-check {
     display: none;
 }
@@ -45,11 +56,11 @@ header {
     display: flex;
     align-items: center;
     height: 70px;
-    
+
 
 }
 
-.menu_hamburgesa{
+.menu_hamburgesa {
     display: none;
 }
 
@@ -123,23 +134,23 @@ header {
     height: auto;
 }
 
-.banner-principal img{
+.banner-principal img {
     width: 1280px;
     height: auto;
 }
 
-.banner-principal{
+.banner-principal {
     margin-bottom: 45px;
 }
 
-.pedidos{
-    
+.pedidos {
+
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.pedido{
+.pedido {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -150,41 +161,42 @@ header {
     background-color: #FFFFFF;
 }
 
-.imagen{
+.imagen {
     width: 180px;
     height: 180px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.pedido-info{
+.pedido-info {
     flex: 1;
     margin-left: 45px;
 }
 
-.estado-contenedor{
+.estado-contenedor {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.pedidos-info2 p{
+.pedidos-info2 p {
     font-size: 24px;
     font-weight: 500;
 }
-.pedido-info h2{
+
+.pedido-info h2 {
     font-size: 40PX;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-.pedido-info p{
+.pedido-info p {
     font-size: 24PX;
     font-weight: 500;
     margin: 20px 0;
 }
 
-.pedido-estado{
+.pedido-estado {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,21 +211,21 @@ header {
     border-radius: 15px;
 }
 
-.pedido-estado img{
+.pedido-estado img {
     width: 58px;
     height: 60px;
 }
 
-.estado{
+.estado {
     font-size: 32px;
     font-weight: 500;
 }
 
-.ver-mas{
+.ver-mas {
     margin-left: 30px;
 }
 
-.ver-mas img{
+.ver-mas img {
     width: 48px;
     cursor: pointer;
 }
@@ -323,6 +335,7 @@ footer {
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
+
 /* Columna 3 del footer*/
 .footer-contacto {
     display: flex;
@@ -360,178 +373,183 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* =========================
-   TABLET (768px - 1024px)
-========================= */
-@media screen and (max-width: 1024px){
+/* TABLET (768px - 1024px) */
+@media screen and (max-width: 1024px) {
 
     /* HEADER */
-    .header-container{
+    .header-container {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .label_hamburgesa{
+    .label_hamburgesa {
         display: block;
         color: white;
         cursor: pointer;
         margin-left: auto;
     }
 
-    .nav-links{
+    .nav-links {
         display: none;
     }
 
-    .header-container2{
+    .header-container2 {
         display: none;
     }
 
-    .menu_hamburgesa:checked + .nav-links{
+    .menu_hamburgesa:checked+.nav-links {
+        /* Activa el modelo Flexbox para organizar los elementos hijos */
         display: flex;
+        /* Coloca los elementos uno debajo del otro (en columna) */
         flex-direction: column;
+        /* Posiciona el elemento de forma absoluta respecto a su contenedor posicionado */
         position: absolute;
+        /* Sitúa el borde superior del elemento a 100 píxeles desde la parte superior */
         top: 100px;
+        /* Alinea el elemento al borde izquierdo del contenedor */
         left: 0;
         width: 100%;
         background: #6C8E2C;
         padding: 25px 0;
         gap: 20px;
+        /* Asigna una prioridad alta en el apilamiento para que aparezca por encima de otros elementos */
         z-index: 999;
     }
 
-    .nav-links a{
+    .nav-links a {
         font-size: 28px;
     }
 
-    .nav-item-movil{
-        display: block;
+    .nav-item-movil {
+        display: block; /* hace que el elemento ocupe todo el ancha disponible*/
     }
 
-    .nav-iconos{
+    .nav-iconos {
         display: flex;
         gap: 20px;
     }
 
     /* BANNER */
-    .banner-principal img{
+    .banner-principal img {
         width: 100%;
         height: auto;
     }
 
     /* PEDIDOS */
-    .pedido{
+    .pedido {
         display: flex;
-        align-items: center;
+        align-items: center; /*centra verticalmente*/
     }
 
-    .pedido-info{
+    .pedido-info {
         flex: 1;
     }
 
-    .estado-contenedor{
+    .estado-contenedor {
         width: 240px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .imagen{
+
+    .imagen {
         width: 140px;
         height: 140px;
     }
 
-    .pedido-info{
+    .pedido-info {
         margin-left: 20px;
     }
 
-    .pedido-info h2{
+    .pedido-info h2 {
         font-size: 30px;
     }
 
-    .pedido-info p{
+    .pedido-info p {
         font-size: 20px;
         margin: 10px 0;
     }
 
-    .pedido-estado{
+    .pedido-estado {
         width: 210px;
         height: 50px;
         border-radius: 6px;
     }
 
-    .pedidos-info2 p{
+    .pedidos-info2 p {
         font-size: 20px;
     }
 
-    .pedido-estado img{
+    .pedido-estado img {
         width: 40px;
         height: 40px;
     }
 
-    .estado{
+    .estado {
         font-size: 22px;
     }
 
-    .ver-mas img{
+    .ver-mas img {
         width: 35px;
     }
 
     /* FOOTER */
-    .footer-container{
+    .footer-container {
         flex-wrap: wrap;
         gap: 30px;
         padding: 30px;
     }
 
-    .logo-footer{
+    .logo-footer {
         width: 150px;
         height: 80px;
     }
 
-    .frase_footer{
+    .frase_footer {
         font-size: 18px;
     }
 
-    .footer-links a{
+    .footer-links a {
         font-size: 18px;
     }
 
-    .contacto-item{
+    .contacto-item {
         font-size: 18px;
     }
 
-    .contacto-item img{
+    .contacto-item img {
         width: 40px;
         height: 40px;
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
 
     /* HEADER */
-    .header-container{
+    .header-container {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .label_hamburgesa{
+    .label_hamburgesa {
         display: block;
         color: white;
         cursor: pointer;
     }
 
-    .nav-links{
+    .nav-links {
         display: none;
     }
 
-    .header-container2{
+    .header-container2 {
         display: none;
     }
 
-    .menu_hamburgesa:checked + .nav-links{
+    .menu_hamburgesa:checked+.nav-links {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -544,87 +562,86 @@ footer {
         z-index: 999;
     }
 
-    .nav-links a{
+    .nav-links a {
         font-size: 22px;
     }
 
-    .nav-item-movil{
+    .nav-item-movil {
         display: block;
     }
 
-    .nav-iconos{
+    .nav-iconos {
         display: flex;
         gap: 15px;
     }
 
     /* BANNER */
-    .banner-principal img{
+    .banner-principal img {
         width: 100%;
         height: auto;
     }
 
     /* PEDIDOS */
-    .pedido{
+    .pedido {
         flex-direction: column;
         align-items: center;
         text-align: center;
-
         margin: 0 15px;
         padding: 20px;
         gap: 15px;
     }
 
-    .imagen{
+    .imagen {
         width: 120px;
         height: 120px;
     }
 
-    .pedido-info{
+    .pedido-info {
         margin-left: 0;
     }
 
-    .pedido-info h2{
+    .pedido-info h2 {
         font-size: 28px;
         margin-bottom: 10px;
     }
 
-    .pedido-info p{
+    .pedido-info p {
         font-size: 18px;
         margin: 8px 0;
     }
 
-    .estado-contenedor{
+    .estado-contenedor {
         width: 100%;
         display: flex;
         justify-content: center;
     }
 
-    .pedido-estado{
+    .pedido-estado {
         width: 200px;
         height: 55px;
         border-radius: 10px;
     }
 
-    .pedido-estado img{
+    .pedido-estado img {
         width: 32px;
         height: 32px;
     }
 
-    .estado{
+    .estado {
         font-size: 20px;
     }
 
-    .ver-mas{
+    .ver-mas {
         margin-left: 0;
         margin-top: 10px;
     }
 
-    .ver-mas img{
+    .ver-mas img {
         width: 35px;
     }
 
     /* FOOTER */
-    .footer-container{
+    .footer-container {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -632,25 +649,25 @@ footer {
         padding: 25px 15px;
     }
 
-    .frase_footer{
+    .frase_footer {
         font-size: 16px;
     }
 
-    .footer-links a{
+    .footer-links a {
         font-size: 18px;
     }
 
-    .contacto-item{
+    .contacto-item {
         justify-content: center;
         font-size: 16px;
     }
 
-    .contacto-item img{
+    .contacto-item img {
         width: 35px;
         height: 35px;
     }
 
-    .footer-bottom{
+    .footer-bottom {
         justify-content: center;
         text-align: center;
         padding: 10px;
