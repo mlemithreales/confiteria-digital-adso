@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Encabezado -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Permite caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- permite que la pagina sea adecuada para dispositivos móviles -->
+    <title>Confiteria Digital ADSO</title>
+    <link rel="stylesheet" href="../styles/carrito.css"> <!-- Enlace al archivo CSS para estilos -->
+</head>
+<!-- Cuerpo de la página -->
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="../assets/logofina3 1.png" alt="logo">
+            </div>
+
+            <label class="label_hamburgesa" for="menu_hamburgesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+
+            </label>
+
+            <input class="menu_hamburgesa" type="checkbox" id="menu_hamburgesa">
+            <ul class="nav-links">
+                <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a href="./pedidos.html">Pedidos</a></li>
+                <li class="nav-item"><a href="./preferencial.html">Preferencial</a></li>
+                <li class="nav-item"><a href="./quienes-somos.html">¿Quiénes somos?</a></li>
+                <li class="nav-item-movil"><a href="#">Registro</a></li>
+                <li class="nav-item nav-iconos">
+                    <a href="./inicio.html"><img src="../assets/imagenes-index/InicioSesion.svg" alt="Usuario"></a>
+                    <a href="./carrito.html"><img src="../assets/imagenes-index/Carrito.svg" alt="Carrito"></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="header-container2">
+            <div class="registro"><a href="#">Registro</a></div>
+            <div class="botones">
+                <a href="./inicio.html"><img src="../assets/imagenes-index/InicioSesion.svg" alt="Usuario"></a>
+                <a href="./carrito.html"><img src="../assets/imagenes-index/Carrito.svg" alt="Usuario"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner-principal">
+            <img src="../assets/imagenes-carrito/banner-carrito.png" alt="banner-principal">
+        </div>
+        <section class="carrito">
+            <div class="pedidos">
+                <label class="check">
+                    <input type="checkbox">
+                    <span class="text">Seleccionar todo</span>
+                </label>
+                <hr>
+                <div class="productos-pedidos">
+                    <img src="../assets/imagenes-carrito/Rectangle 71.png" alt="pedido1">
+                    <div class="detalle-producto">
+                        <h3>Oso de peluche</h3>
+                        <p class="parrafo">Suave peluche de tamaño mediano, color beige, con un moño decorativo marrón.
+                        </p>
+                        <h4 class="textverde">En stock</h4>
+                    </div>
+                    <div class="info">
+                        <img src="../assets/imagenes-carrito/Checked Checkbox.png" alt="checkbox">
+                        <h5>$20.000</h5>
+                        <div class="contador">
+                            <h2>- 1 +</h2>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="productos-pedidos">
+                    <img src="../assets/imagenes-carrito/Rectangle 71 (1).png" alt="pedido2">
+                    <div class="detalle-producto">
+                        <h3>Bolso blanco</h3>
+                        <p class="parrafo">Bolso elegante de tamaño compacto, con diseño rígido, asa superior fruncida y
+                            correa larga desmontable.</p>
+                        <h4 class="textverde">En stock</h4>
+                    </div>
+                    <div class="info">
+                        <img src="../assets/imagenes-carrito/Checked Checkbox.png" alt="checkbox">
+                        <h5>$45.000</h5>
+                        <div class="contador">
+                            <h2>- 1 +</h2>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="productos-pedidos">
+                    <img src="../assets/imagenes-carrito/Rectangle 71 (2).png" alt="pedido3">
+                    <div class="detalle-producto">
+                        <h3>Bolso Elegante Azul</h3>
+                        <p class="parrafo">Fabricado con material de textura tipo cuero, lo que le brinda una apariencia
+                            fina y duradera.</p>
+                        <h4 class="textverde">En stock</h4>
+                    </div>
+                    <div class="info">
+                        <img src="../assets/imagenes-carrito/Checked Checkbox.png" alt="checkbox">
+                        <h5>$20.000</h5>
+                        <div class="contador">
+                            <h2>- 1 +</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="resumen">
+                <div class="titulo">
+                    <img src="../assets/imagenes-carrito/Shopping Bag.png" alt="icono bolsa de compra">
+                    <span class="text2">Resumen de tu pedido</span>
+                </div>
+                <div class="detalle-resumen">
+                    <div class="fila">
+                        <span>Subtotal (3 Productos)</span>
+                        <span>$123.000</span>
+                    </div>
+                    <div class="fila">
+                        <span>Envío</span>
+                        <span>$10.000</span>
+                    </div>
+                    <hr>
+                    <div class="fila total">
+                        <span>Total</span>
+                        <span>$133.000</span>
+                    </div>
+                    <button class="btn-pse">
+                        <img src="../assets/imagenes-carrito/Group 205.png" alt="PSE">
+                        Pagar con PSE
+                    </button>
+                    <button class="btn-tarjeta">
+                        <img src="../assets/imagenes-carrito/tarjetas-credito-logos-removebg-preview 1.png" alt="pagp tarjeta">
+                        Pagar con Tarjeta
+                    </button>
+                    <div class="seguridad">
+                        <img src="../assets/imagenes-carrito/Security Lock.png" alt="seguridad">
+                        <div>
+                            <h4>Compra segura</h4>
+                            <p>Tus datos y compras estan protegidos por nosotros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="redes-sociales">
+                <img class="logo-footer" src="../assets/imagenes-index/logofina3 1.png" alt="logo">
+                <p class="frase_footer">
+                    Los mejores dulces y regalos <br>
+                    para cada ocasion especial.</p>
+                <div class="iconos">
+                    <img class="icono_1" src="../assets/imagenes-index/Instagram Circle.png" alt="Instagram">
+                    <img class="icono_2" src="../assets/imagenes-index/WhatsApp.png" alt="whatsapp">
+                    <img class="icono_3" src="../assets/imagenes-index/Facebook - copia.png" alt="Facebook">
+                    <img class="icono_4" src="../assets/imagenes-index/WhatsApp Image 2026-05-05 at 8.18.59 AM 2.png"
+                        alt="youtube">
+                    <img class="icono_5" src="../assets/imagenes-index/Twitter Circled - copia.png" alt="Twitter">
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#">Tienda</a>
+                <a href="#">Dulces y regalos</a>
+                <a href="#">Novedades</a>
+                <a href="#">Preferencial</a>
+            </div>
+            <div class="footer-contacto">
+                <div class="contacto-item">
+                    <img src="../assets/imagenes-index/WhatsApp.png" alt="telefono">
+                    <span>+57-3115009843</span>
+                </div>
+                <div class="contacto-item">
+                    <img src="../assets/imagenes-index/Shop Location.png" alt="ubicacion">
+                    <span>Parque Principal de Busbanzá, Boyacá</span>
+                </div>
+            </div>
+        </div>
+        <!-- Barra inferior -->
+        <div class="footer-bottom">
+            <span>2026 Dulceria Digital ADSO</span>
+            <span>Privacidad - Terminos</span>
+        </div>
+    </footer>
+</body>
+    

@@ -1,0 +1,218 @@
+```css
+/* ========================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================= */
+
+.login-section{
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url("../assets/imagenes-login/fondo-login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* ========================= */
+/* TARJETA DEL LOGIN */
+/* ========================= */
+
+.login-card{
+    width: 450px;
+    max-width: 100%;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.20);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 2px solid rgba(255,255,255,.4);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+/* ========================= */
+/* FORMULARIO */
+/* ========================= */
+
+.login-card form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ========================= */
+/* INPUTS */
+/* ========================= */
+
+.login-card input{
+
+    width: 100%;
+
+    padding: 16px 20px;
+
+    border-radius: 15px;
+
+    border: 2px solid #fff;
+
+    background: transparent;
+
+    color: #fff;
+
+    font-size: 20px;
+
+    outline: none;
+
+    box-sizing: border-box;
+}
+
+.login-card input::placeholder{
+    color: #fff;
+}
+
+/* ========================= */
+/* ENLACE */
+/* ========================= */
+
+.recuperar{
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+}
+
+.recuperar:hover{
+    text-decoration: underline;
+}
+
+/* ========================= */
+/* BOTÓN */
+/* ========================= */
+
+.login-card button{
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background-color: #B41414;
+
+    color: #fff;
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.login-card button:hover{
+
+    background-color: #8f0f0f;
+}
+
+/* ========================= */
+/* TEXTO INFERIOR */
+/* ========================= */
+
+.login-card p{
+
+    text-align: center;
+
+    color: #fff;
+
+    font-size: 18px;
+}
+
+.login-card p a{
+
+    color: #d10000;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.login-card p a:hover{
+
+    text-decoration: underline;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width:1024px){
+
+    .login-card{
+
+        width: 380px;
+
+        padding: 30px;
+    }
+
+    .login-card button{
+
+        font-size: 22px;
+    }
+
+}
+
+/* ========================= */
+/* MÓVIL */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .login-section{
+
+        padding: 20px;
+    }
+
+    .login-card{
+
+        width: 100%;
+
+        padding: 25px;
+    }
+
+    .login-card input{
+
+        font-size: 18px;
+    }
+
+    .login-card button{
+
+        font-size: 20px;
+    }
+
+    .login-card p{
+
+        font-size: 16px;
+    }
+
+    .recuperar{
+
+        font-size: 16px;
+    }
+
+}
+```

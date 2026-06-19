@@ -1,0 +1,332 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confitería Digital ADSO</title>
+    <link rel="stylesheet" href="../styles/verpedidos.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="header-container">
+
+            <div class="logo">
+                <img src="../assets/logofina3 1.png" alt="Logo">
+            </div>
+
+            <!-- Menú hamburguesa -->
+            <input type="checkbox" id="menu_hamburgesa" class="menu_hamburgesa">
+
+            <label for="menu_hamburgesa" class="label_hamburgesa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </label>
+
+            <ul class="nav-links">
+                <li class="nav-item"><a href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a href="./pedidos.html">Pedidos</a></li>
+                <li class="nav-item"><a href="./preferencial.html">Preferencial</a></li>
+                <li class="nav-item"><a href="./quienes-somos.html">¿Quiénes somos?</a></li>
+
+                <!-- Solo móvil -->
+                <li class="nav-item-movil"><a href="./registro.html">Registro</a></li>
+
+                <li class="nav-item nav-iconos">
+                    <a href="./inicio.html">
+                        <img src="../assets/imagenes-index/InicioSesion.svg" alt="Usuario">
+                    </a>
+
+                    <a href="./carrito.html">
+                        <img src="../assets/imagenes-index/Carrito.svg" alt="Carrito">
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- Solo escritorio -->
+        <div class="header-container2">
+
+            <div class="registro">
+                <a href="./registro.html">Registro</a>
+            </div>
+
+            <div class="botones">
+                <a href="./inicio.html">
+                    <img src="../assets/imagenes-index/InicioSesion.svg" alt="Usuario">
+                </a>
+
+                <a href="./carrito.html">
+                    <img src="../assets/imagenes-index/Carrito.svg" alt="Carrito">
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="contenedor-pedido">
+
+        <!-- Título -->
+        <section class="titulo-pedido">
+
+            <div>
+                <h1>Pedido #001</h1>
+                <p>Realizado el 15 de enero de 2026 a las 3:20 p.m.</p>
+            </div>
+
+            <a href="./pedidos.html" class="btn-volver">
+                Volver a mis pedidos
+            </a>
+
+        </section>
+
+        <!-- Estado -->
+        <section class="estado-pedido">
+
+            <h2>Estado del pedido</h2>
+
+            <div class="linea-progreso"></div>
+
+            <div class="pasos">
+
+                <div class="paso">
+                    <img class="icono-check"
+                        src="../assets/imagenes-verpedidos/Checked Checkbox (1).png"
+                        alt="Confirmado">
+                    <h3>Confirmado</h3>
+                    <p>15 enero 2026</p>
+                </div>
+
+                <div class="paso">
+                    <img class="icono-check"
+                        src="../assets/imagenes-verpedidos/Checked Checkbox (1).png"
+                        alt="Despachado">
+                    <h3>Despachado</h3>
+                    <p>16 enero 2026</p>
+                </div>
+
+                <div class="paso">
+                    <img class="icono-check"
+                        src="../assets/imagenes-verpedidos/Checked Checkbox (1).png"
+                        alt="En ruta">
+                    <h3>En ruta</h3>
+                    <p>22 enero 2026</p>
+                </div>
+
+                <div class="paso">
+                    <img class="icono-check"
+                        src="../assets/imagenes-verpedidos/Checked Checkbox (1).png"
+                        alt="Entregado">
+                    <h3>Entregado</h3>
+                    <p>30 enero 2026</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Información -->
+        <section class="informacion-pedido">
+
+            <h2>Información del pedido</h2>
+
+            <div class="info-contenedor">
+
+                <div class="info-item">
+                    <img class="icono-info"
+                        src="../assets/imagenes-verpedidos/Test Account.png"
+                        alt="Cliente">
+
+                    <h3>Cliente</h3>
+
+                    <p>Meisil R. Reales</p>
+                    <p>mlemith@gmail.com</p>
+                    <p>3136066044</p>
+                </div>
+
+                <div class="info-item">
+
+                    <img class="icono-info"
+                        src="../assets/imagenes-verpedidos/Location.png"
+                        alt="Dirección">
+
+                    <h3>Dirección</h3>
+
+                    <p>Cra 45 #72-123</p>
+                    <p>Barranquilla, Atlántico</p>
+                    <p>Colombia</p>
+
+                </div>
+
+                <div class="info-item">
+
+                    <img class="icono-info"
+                        src="../assets/imagenes-verpedidos/Magnetic Card.png"
+                        alt="Pago">
+
+                    <h3>Método de pago</h3>
+
+                    <p>Tarjeta de crédito</p>
+
+                </div>
+
+                <div class="info-item sin-borde">
+
+                    <img class="icono-info"
+                        src="../assets/imagenes-verpedidos/Google Docs.png"
+                        alt="Resumen">
+
+                    <h3>Resumen</h3>
+
+                    <div class="resumen-datos">
+                        <p>Subtotal: <span>$65.000</span></p>
+                        <p>Envío: <span>$10.000</span></p>
+                        <p>Total: <span class="precio-total">$75.000</span></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Productos -->
+        <section class="seccion-productos">
+
+            <h2>Productos del pedido</h2>
+
+            <!-- Producto 1 -->
+            <div class="producto">
+
+                <img src="../assets/imagenes-carrito/Rectangle 71.png"
+                    alt="Oso de peluche">
+
+                <div class="descripcion">
+                    <h3>Oso de peluche</h3>
+                    <p>
+                        Suave peluche de tamaño mediano, color beige,
+                        con un moño decorativo marrón.
+                    </p>
+                </div>
+
+                <div class="dato">
+                    <span>Precio unitario</span>
+                    <p>$20.000</p>
+                </div>
+
+                <div class="dato">
+                    <span>Cantidad</span>
+                    <p>1</p>
+                </div>
+
+                <div class="dato total">
+                    <span>Total</span>
+                    <p>$20.000</p>
+                </div>
+
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+
+                <img src="../assets/imagenes-carrito/Rectangle 71 (1).png"
+                    alt="Bolso blanco">
+
+                <div class="descripcion">
+                    <h3>Bolso blanco</h3>
+                    <p>
+                        Bolso elegante de tamaño compacto con diseño rígido,
+                        asa superior y correa desmontable.
+                    </p>
+                </div>
+
+                <div class="dato">
+                    <span>Precio unitario</span>
+                    <p>$45.000</p>
+                </div>
+
+                <div class="dato">
+                    <span>Cantidad</span>
+                    <p>1</p>
+                </div>
+
+                <div class="dato total">
+                    <span>Total</span>
+                    <p>$45.000</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Banner -->
+        <div class="banner-fondo">
+            <img src="../assets/imagenes-verpedidos/ChatGPT Image 27 abr 2026, 07_59_43 1-Photoroom.png"
+                alt="Banner">
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="redes-sociales">
+
+                <img class="logo-footer"
+                    src="../assets/imagenes-index/logofina3 1.png"
+                    alt="Logo">
+
+                <p class="frase_footer">
+                    Los mejores dulces y regalos
+                    para cada ocasión especial.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Tienda</a>
+                <a href="#">Dulces y regalos</a>
+                <a href="#">Novedades</a>
+                <a href="#">Preferencial</a>
+            </div>
+
+            <div class="footer-contacto">
+
+                <div class="contacto-item">
+                    <img src="../assets/imagenes-index/WhatsApp.png" alt="Teléfono">
+                    <span>+57 3115009843</span>
+                </div>
+
+                <div class="contacto-item">
+                    <img src="../assets/imagenes-index/Shop Location.png" alt="Ubicación">
+                    <span>Parque Principal de Busbanzá, Boyacá</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>2026 Dulcería Digital ADSO</span>
+            <span>Privacidad - Términos</span>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
+

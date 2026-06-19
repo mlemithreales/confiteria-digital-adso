@@ -187,15 +187,16 @@ header {
 .pedido-estado{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 
     background-color: #7BA71D;
     color: white;
 
-    padding: 15px 25px;
-    border-radius: 15px;
+    width: 240px;
+    height: 70px;
 
-    height: 40px;
+    border-radius: 15px;
 }
 
 .pedido-estado img{
@@ -357,4 +358,301 @@ footer {
     color: #aaa;
     font-size: 13px;
     font-family: 'Montserrat', sans-serif;
+}
+
+/* =========================
+   TABLET (768px - 1024px)
+========================= */
+@media screen and (max-width: 1024px){
+
+    /* HEADER */
+    .header-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .label_hamburgesa{
+        display: block;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .header-container2{
+        display: none;
+    }
+
+    .menu_hamburgesa:checked + .nav-links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: #6C8E2C;
+        padding: 25px 0;
+        gap: 20px;
+        z-index: 999;
+    }
+
+    .nav-links a{
+        font-size: 28px;
+    }
+
+    .nav-item-movil{
+        display: block;
+    }
+
+    .nav-iconos{
+        display: flex;
+        gap: 20px;
+    }
+
+    /* BANNER */
+    .banner-principal img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* PEDIDOS */
+    .pedido{
+        display: flex;
+        align-items: center;
+    }
+
+    .pedido-info{
+        flex: 1;
+    }
+
+    .estado-contenedor{
+        width: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagen{
+        width: 140px;
+        height: 140px;
+    }
+
+    .pedido-info{
+        margin-left: 20px;
+    }
+
+    .pedido-info h2{
+        font-size: 30px;
+    }
+
+    .pedido-info p{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .pedido-estado{
+        width: 210px;
+        height: 50px;
+        border-radius: 6px;
+    }
+
+    .pedidos-info2 p{
+        font-size: 20px;
+    }
+
+    .pedido-estado img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .estado{
+        font-size: 22px;
+    }
+
+    .ver-mas img{
+        width: 35px;
+    }
+
+    /* FOOTER */
+    .footer-container{
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .logo-footer{
+        width: 150px;
+        height: 80px;
+    }
+
+    .frase_footer{
+        font-size: 18px;
+    }
+
+    .footer-links a{
+        font-size: 18px;
+    }
+
+    .contacto-item{
+        font-size: 18px;
+    }
+
+    .contacto-item img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    /* HEADER */
+    .header-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .label_hamburgesa{
+        display: block;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .header-container2{
+        display: none;
+    }
+
+    .menu_hamburgesa:checked + .nav-links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: #6C8E2C;
+        padding: 20px 0;
+        gap: 15px;
+        z-index: 999;
+    }
+
+    .nav-links a{
+        font-size: 22px;
+    }
+
+    .nav-item-movil{
+        display: block;
+    }
+
+    .nav-iconos{
+        display: flex;
+        gap: 15px;
+    }
+
+    /* BANNER */
+    .banner-principal img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* PEDIDOS */
+    .pedido{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        margin: 0 15px;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .imagen{
+        width: 120px;
+        height: 120px;
+    }
+
+    .pedido-info{
+        margin-left: 0;
+    }
+
+    .pedido-info h2{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .pedido-info p{
+        font-size: 18px;
+        margin: 8px 0;
+    }
+
+    .estado-contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pedido-estado{
+        width: 200px;
+        height: 55px;
+        border-radius: 10px;
+    }
+
+    .pedido-estado img{
+        width: 32px;
+        height: 32px;
+    }
+
+    .estado{
+        font-size: 20px;
+    }
+
+    .ver-mas{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .ver-mas img{
+        width: 35px;
+    }
+
+    /* FOOTER */
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+        padding: 25px 15px;
+    }
+
+    .frase_footer{
+        font-size: 16px;
+    }
+
+    .footer-links a{
+        font-size: 18px;
+    }
+
+    .contacto-item{
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .contacto-item img{
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-bottom{
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+    }
 }
